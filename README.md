@@ -6,6 +6,7 @@ Please find the subject file in subject folder.
 - PiRacer Setup
 ## Assemble PiRacer
 ### Step 1
+[Manual Assemble](https://www.waveshare.com/w/upload/a/a2/Piracer_pro_ai_kit-en2.pdf)
 ### Step 2
 ### Step 3
 ## RasberryPi Setup
