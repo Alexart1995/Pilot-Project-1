@@ -13,23 +13,27 @@ After these steps done finish an assemble </br>
 
 # RasberryPi Setup
 ### Step 1. Install operating Systems
-img 1 img 2 img 3
-1. Install Putty (link)
-2. Download Raspian Legacy (link)
-3. Install on your computer. As a result while launching you should see img1
-4. Download RasberryPi Imager (link)
-5. Connect you SD card in your computer ( labtop )
-6. Change Operating System from step 4 (img 2)
-7. Change advanced options to connect WIFI
+1. [Install Putty](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html)
+2. [Download Raspian Legacy](https://www.raspberrypi.com/software/)
+3. Install on your computer. As a result while launching you should see image (below) </br>
+<img src="https://github.com/Alexart1995/Pilot-Project-1/blob/main/RBP1.png" width="320" height="200"> </br>
+4. [Download RasberryPi Imager](https://docs.donkeycar.com/guide/robot_sbc/setup_raspberry_pi/#step-1-flash-operating-system)
+5. Connect you SD card to your computer (laptop)
+6. Change Operating System from step 4 (Image below) </br>
+<img src="https://github.com/Alexart1995/Pilot-Project-1/blob/main/RBP2.png" width="320" height="200"> </br>
+7. Change advanced options to connect WIFI (ask for relevant WiFi Settings your peers) </br>
+<img src="https://github.com/Alexart1995/Pilot-Project-1/blob/main/RBP3.png" width="300" height="400"> </br>
 8. Click WRITE to Download Rasberri Pi on SD card
 9. Move to ```/boot``` directory
 10. Enter command ```touch ssh```
 11. Insert your SD card to PiRacer
 12. Connect to monitor 
-13. Find IP of your Car (img)
+13. Find IP of your Car (Image below) </br>
+<img src="https://github.com/Alexart1995/Pilot-Project-1/blob/main/IP.png" width="320" height="200"> </br>
 ### Step 2. Connecting to the Pi
-1. Connect IP of PiRacer to computer(laptop) with Putty (img)
-2. Connect to Pi (img)
+1. Connect IP of PiRacer to computer(laptop) with Putty using  IP of PiRacer from previous step </br>
+<img src="https://github.com/Alexart1995/Pilot-Project-1/blob/main/Putty.png" width="350" height="400"> </br>
+2. Connect to Pi
     - login: ```audi```
     - password: ```seame2022```
 ### Step 3. Update and Upgrade 
@@ -37,7 +41,8 @@ img 1 img 2 img 3
 sudo apt-get update --allow-releaseinfo-change
 sudo apt-get upgrade
 ```
-### Step 4. Raspi-config
+### Step 4. Raspi-config </br>
+<img src="https://github.com/Alexart1995/Pilot-Project-1/blob/main/RaspConfig1.png" width="320" height="200"> </br>
 ```
 sudo raspi-config
 ```
@@ -133,7 +138,7 @@ sudo i2cdetect -y 1
 60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
 70: 70 -- -- -- -- -- -- --
 ```
-### Web Control (img)
+### [Web Control](https://www.waveshare.com/wiki/DonkeyCar_for_Pi-WEB_Control)
 1. Open Raspberry Pi terminal and run the follow commands
 ```
 source ~/env/bin/activate
@@ -166,7 +171,8 @@ sudo nano config.py
 cd ~/mycar
 donkey createjs
 ```
-3. To map button, axis, control follow instructions on the screeb (img)
+3. To map button, axis, control follow instructions on the screeb </br>
+<img src="https://github.com/Alexart1995/Pilot-Project-1/blob/main/Gamepad.png" width="320" height="200"> </br>
 In mapping steps of steering and throttle, you should set in opposite direction 
 ( For example, If you want to throttle Left Stick: Vertical, you need to register Right Stick: Horizontal in the throttle step )
 4. Change configuration
